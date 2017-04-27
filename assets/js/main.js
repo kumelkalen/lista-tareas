@@ -54,3 +54,10 @@ var res = [
     "completed": false
   }
   ];
+
+  var imprimir=res.forEach(function(el){
+var lis=document.createElement("LI");
+var texto=document.createTextNode(el.title);
+lis.appendChild(texto);
+document.getElementById("lista").appendChild(lis)
+})
