@@ -61,3 +61,11 @@ var texto=document.createTextNode(el.title);
 lis.appendChild(texto);
 document.getElementById("lista").appendChild(lis)
 })
+
+  function agregarTarea(){
+  var tarea =document.getElementById("lista");
+  var ingresar = document.getElementById("agregarli").value
+  tarea.innerHTML += '<li>' + ingresar + '</li>';
+}
+  
+agregarTarea();
